@@ -357,6 +357,9 @@
 
 </table>
 
+
+** nested tabel **
+
 <table border="2px">
     <tr>
         <th>header column 1</th>
@@ -400,8 +403,16 @@
                 </tr>
             </table>
         </th>
-        <td> eow 3 item 2</td>
-        <td> row 3 item 3</td>
+        <td> row 3 item 2</td>
+        <td rowspan="2"> row 3 item 3</td>
+    </tr>
+    <tr>
+        <td>row 4 item1</td>
+        <td>row 4 item2</td>
+        <td> row 4 item3 </td>
+    </tr>
+    <tr>
+        <td colspan="4"> row 5- last row if our table </td>
     </tr>
 
 </table>
