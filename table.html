@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" type="text/css" href="/style.css"/>
 </head>
 <body>
     table1
@@ -168,7 +173,237 @@
             <td>science </td>
             <td>41</td>
         </tr>
+        
 
      </table>
+     ** rowspan example **
+
+<table border="2">
+    <tr>
+        <th rowspan="2">supplier name </th>
+        <th rowspan="2">product name </th>
+        <th colspan="2">product details</th>
+        <th rowspan="2"> total price<th>
+    </tr>
+    <tr>
+        <td>price   </td>
+        <td>quantity</td>
+    </tr>
+    <tr>
+        <td>poonam electronics</td>
+        <td>printers</td>
+        <td>2500</td>
+        <td>08</td>
+        <td>20000</td>
+    </tr>
+
+    <tr>
+        <td>raj electronics</td>
+        <td>sacanner</td>
+        <td>1800</td>
+        <td>05</td>
+        <td>9000</td>
+    </tr>
+</table>
+
+
+** rowspan colspan **
+
+<table border="2px">
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="3">Morning</th>
+        <th>lunch</th>
+        <th colspan="4">Afternoon</th>
+        <th colspan="3">evening</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>9-10am</td>
+        <td>10-11am</td>
+        <td>11-12am</td>
+        <td>1-2am</td>
+        <td>2-3am</td>
+        <td>3-4am</td>
+        <td>4-5am</td>
+        <td>5-6am</td>
+        <td>6-7am</td>
+        <td>7-8am</td>
+        <td>8-9am</td>
+    </tr>
+    <tr>
+        <td rowspan="2">work</td>
+        <td>monday</td>
+        <td colspan="3">developement meeting</td>
+        <td></td>
+        <td colspan="3">client meeting</td>
+        <td>coremute</td>
+        <td colspan="3">free</td>
+    </tr>
+    <tr>
+        <td>tuseday</td>
+        <td colspan="3">in office</td>
+        <td></td>
+        <td colspan="7">in office</td>
+    </tr>
+    <tr>
+        <td rowspan="2">lecture</td>
+        <td>wednesday</td>
+        <td colspan="3">CSC205</td>
+        <td></td>
+        <td colspan="7">prepration</td>
+    </tr>
+    <tr>
+        <td>thrusday</td>
+        <td colspan="3">MAM200</td>
+        <td></td>
+        <td colspan="3">tutorials for MAM200</td>
+        <td colspan="4">free</td>
+    </tr>
+    <tr>
+        <td>research</td>
+        <td>friday</td>
+        <td colspan="3">research</td>
+        <td></td>
+        <td colspan="7">resrarch</td>
+    </tr>
+</table>
+  
+** rowspan colspan table second**
+<table border="2px">
+    <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="3">seminar</th>
+    </tr>
+    <tr>
+        <th colspan="2">schedule</th>
+        <th rowspan="2">topic</th>
+    </tr>
+    <tr>
+        <th>begin</th>
+        <th>end</th>
+    </tr>
+    <tr>
+        <td rowspan="2">monday</td>
+        <td rowspan="2">8:00am</td> 
+        <td rowspan="2">5:00am</td>
+        <td>introduction to XML</td>
+    </tr>
+    <tr>
+        <td>validity:DTD and relax NG</td>
+    </tr>
+    <tr>
+        <td rowspan="3">tuesday</td>
+        <td>8:00am</td>
+        <td>11:00am</td>
+        <td rowspan="2">Xpath</td>
+    </tr>
+    <tr>
+        <td>11:00am</td>
+        <td>2:00am</td>
+    </tr>
+    <tr>
+        <td>2:00pm</td>
+        <td>5:00pm</td>
+        <td>XSL transformation</td>
+    </tr>
+    <tr>
+        <td>wednesday</td>
+        <td>8:00am</td>
+        <td>12:00am</td>
+        <td>XSL formating objects </td>
+    </tr>
+
+</table>
+
+
+
+
+<table border="2px">
+    <tr>
+        <th>css property</th>
+        <th>internet explore</th>
+        <th>firefox</th>
+        <th>chrome</th>
+        <th>safari</th>
+        <th>opera</th>
+    </tr>
+    <tr>
+        <th>border radius</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+    </tr>
+    <TR>
+        <th>box shadow</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+    </TR>
+    <tr>
+        <th>css animation</th>
+        <TD>NO</TD>
+        <TD>NO</TD>
+        <TD>YES</TD>
+        <TD>YES</TD>
+        <TD>NO</TD>
+    </tr>
+
+</table>
+
+<table border="2px">
+    <tr>
+        <th>header column 1</th>
+        <th>header column 2</th>
+        <th>header column 3</th>
+        <th>header column 4</th>
+    </tr>
+    <tr>
+        <td>row 2-item1</td>
+        <td>row 2-item2</td>
+        <th rowspan="2">row 2 nested table1
+            <table border="1px">
+                <tr>
+                    <th>row 1 header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>row 2 header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>row 3 header </th>
+                    <td>item</td>
+                </tr>
+            </table>
+        </th>
+        <td>row 2-item 4
+            a second line
+        </td>
+    </tr>
+    <tr>
+        <th>row 3 nested table 2
+            <table border="1px">
+                <tr>
+                    <th>row 1 header </th>
+                    <td>item</td>
+                </tr>
+                <tr> 
+                    <th>row 2 header</th>
+                    <td>item</td>
+                </tr>
+            </table>
+        </th>
+        <td> eow 3 item 2</td>
+        <td> row 3 item 3</td>
+    </tr>
+
+</table>
 </body>
 </html>
